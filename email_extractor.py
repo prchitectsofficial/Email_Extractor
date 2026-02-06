@@ -61,12 +61,18 @@ class EmailExtractor:
         
         # Email de-obfuscation mappings - expanded to catch more patterns
         self.obfuscation_map = (
-            # @ symbol replacements
-            ("[at]", "@"), ("(at)", "@"), ("{at}", "@"), 
+            # @ symbol replacements (case insensitive variations)
+            ("[at]", "@"), ("(at)", "@"), ("{at}", "@"), ("<at>", "@"), 
             (" at ", "@"), (" [at] ", "@"), (" (at) ", "@"), (" {at} ", "@"),
-            # . symbol replacements  
-            ("[dot]", "."), ("(dot)", "."), ("{dot}", "."), 
+            ("[AT]", "@"), ("(AT)", "@"), ("{AT}", "@"), ("<AT>", "@"),
+            (" AT ", "@"), (" [AT] ", "@"), (" (AT) ", "@"), (" {AT} ", "@"),
+            ("[At]", "@"), ("(At)", "@"), ("{At}", "@"), ("<At>", "@"),
+            # . symbol replacements (case insensitive variations)
+            ("[dot]", "."), ("(dot)", "."), ("{dot}", "."), ("<dot>", "."),
             (" dot ", "."), (" [dot] ", "."), (" (dot) ", "."), (" {dot} ", "."),
+            ("[DOT]", "."), ("(DOT)", "."), ("{DOT}", "."), ("<DOT>", "."),
+            (" DOT ", "."), (" [DOT] ", "."), (" (DOT) ", "."), (" {DOT} ", "."),
+            ("[Dot]", "."), ("(Dot)", "."), ("{Dot}", "."), ("<Dot>", "."),
         )
         
         # Priority keywords for page filtering
@@ -239,12 +245,31 @@ class EmailExtractor:
         # 1) Direct regex extraction with current pattern
         candidates.update(re.findall(self.email_pattern, text))
         
-        # 2) Additional email pattern with parentheses format: abc@domain.com
+        # 2) Additional email pattern with parentheses format: abc@domain.com (more flexible)
         additional_pattern = re.compile(
             r'\b[A-Za-z0-9._%+-]+\s*@\s*[A-Za-z0-9.-]+\s*\.\s*[A-Za-z]{2,}\b',
             re.IGNORECASE
         )
         candidates.update(re.findall(additional_pattern, text))
+        
+        # 2b) More aggressive pattern - allows for various separators and formats
+        aggressive_pattern = re.compile(
+            r'[A-Za-z0-9._%+-]+[@\s]+[A-Za-z0-9.-]+[.\s]+[A-Za-z]{2,}',
+            re.IGNORECASE
+        )
+        aggressive_matches = aggressive_pattern.findall(text)
+        for match in aggressive_matches:
+            # Clean up the match
+            cleaned = re.sub(r'\s+', '', match.replace(' ', '').replace('\n', '').replace('\t', ''))
+            if '@' in cleaned and '.' in cleaned:
+                candidates.add(cleaned)
+        
+        # 2c) Pattern for emails without word boundaries (more aggressive)
+        loose_pattern = re.compile(
+            r'[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9.-]{1,253}\.[A-Za-z]{2,}',
+            re.IGNORECASE
+        )
+        candidates.update(re.findall(loose_pattern, text))
         
         # 3) Look for emails in HTML attributes (like href="mailto:email@domain.com")
         mailto_pattern = re.compile(
@@ -270,31 +295,60 @@ class EmailExtractor:
             deobfuscated_text = deobfuscated_text.replace(obfuscated, replacement)
         
         # Additional pattern-based de-obfuscation for complex cases
+        # These patterns match obfuscated emails BEFORE replacement (check original text)
         
-        # Pattern for: word [at] word [dot] word
+        # Pattern for: word [at] word [dot] word (case insensitive)
         pattern1 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\[at\]\s*([a-zA-Z0-9.-]+)\s*\[dot\]\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
-        matches = pattern1.findall(deobfuscated_text)
+        matches = pattern1.findall(text)
         for match in matches:
             email = f"{match[0]}@{match[1]}.{match[2]}"
             candidates.add(email)
         
         # Pattern for: word (at) word (dot) word
         pattern2 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\(at\)\s*([a-zA-Z0-9.-]+)\s*\(dot\)\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
-        matches = pattern2.findall(deobfuscated_text)
+        matches = pattern2.findall(text)
         for match in matches:
             email = f"{match[0]}@{match[1]}.{match[2]}"
             candidates.add(email)
         
         # Pattern for: word {at} word {dot} word
-        pattern3 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\{{at\}}\s*([a-zA-Z0-9.-]+)\s*\{{dot\}}\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
-        matches = pattern3.findall(deobfuscated_text)
+        pattern3 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\{at\}\s*([a-zA-Z0-9.-]+)\s*\{dot\}\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
+        matches = pattern3.findall(text)
         for match in matches:
             email = f"{match[0]}@{match[1]}.{match[2]}"
             candidates.add(email)
         
-        # Pattern for: word at word dot word
+        # Pattern for: word <at> word <dot> word
+        pattern3b = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*<at>\s*([a-zA-Z0-9.-]+)\s*<dot>\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
+        matches = pattern3b.findall(text)
+        for match in matches:
+            email = f"{match[0]}@{match[1]}.{match[2]}"
+            candidates.add(email)
+        
+        # Pattern for: word at word dot word (with spaces)
         pattern4 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s+at\s+([a-zA-Z0-9.-]+)\s+dot\s+([a-zA-Z]{2,})\b', re.IGNORECASE)
-        matches = pattern4.findall(deobfuscated_text)
+        matches = pattern4.findall(text)
+        for match in matches:
+            email = f"{match[0]}@{match[1]}.{match[2]}"
+            candidates.add(email)
+        
+        # Pattern for: word AT word DOT word (uppercase)
+        pattern5 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s+AT\s+([a-zA-Z0-9.-]+)\s+DOT\s+([a-zA-Z]{2,})\b')
+        matches = pattern5.findall(text)
+        for match in matches:
+            email = f"{match[0]}@{match[1]}.{match[2]}"
+            candidates.add(email)
+        
+        # Pattern for: word [at] word . word (mixed format)
+        pattern6 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\[at\]\s*([a-zA-Z0-9.-]+)\s*\.\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
+        matches = pattern6.findall(text)
+        for match in matches:
+            email = f"{match[0]}@{match[1]}.{match[2]}"
+            candidates.add(email)
+        
+        # Pattern for: word (at) word . word (mixed format)
+        pattern7 = re.compile(r'\b([a-zA-Z0-9._+-]+)\s*\(at\)\s*([a-zA-Z0-9.-]+)\s*\.\s*([a-zA-Z]{2,})\b', re.IGNORECASE)
+        matches = pattern7.findall(text)
         for match in matches:
             email = f"{match[0]}@{match[1]}.{match[2]}"
             candidates.add(email)
@@ -342,9 +396,17 @@ class EmailExtractor:
             
             # Length check and basic validation
             if 5 <= len(clean_email) <= 254 and '@' in clean_email and '.' in clean_email:
-                # Skip common false positives
-                if not any(pattern in clean_email for pattern in [
-                    '.png', '.jpg', '.jpeg', '.gif', '.svg', '.css', '.js',
+                # Skip common false positives - file extensions and common patterns
+                file_extensions = [
+                    '.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.ico',  # Images
+                    '.mp4', '.avi', '.mov', '.wmv', '.flv', '.webm', '.mkv', '.mpeg', '.mpg',  # Video
+                    '.mp3', '.wav', '.flac', '.aac', '.ogg', '.wma', '.m4a',  # Audio
+                    '.css', '.js', '.json', '.xml', '.html', '.htm',  # Web files
+                    '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',  # Documents
+                    '.zip', '.rar', '.tar', '.gz', '.7z',  # Archives
+                    '.exe', '.dll', '.bin', '.iso',  # Executables
+                ]
+                if not any(pattern in clean_email for pattern in file_extensions + [
                     'example.com', 'test.com', 'domain.com', 'yoursite.com',
                     'sampleemail', 'youremail', 'example@'
                 ]):
@@ -492,18 +554,50 @@ class EmailExtractor:
         if sitemap_urls:
             urls_to_crawl.extend(sitemap_urls)
             logger.info(f"Found {len(sitemap_urls)} priority pages from sitemap for {base_url}")
-        else:
+        
+        # Also try to discover contact pages by checking homepage links
+        try:
+            homepage_response = self._make_request_with_retries(base_url)
+            if homepage_response and homepage_response.status_code == 200:
+                homepage_soup = BeautifulSoup(homepage_response.content, 'html.parser')
+                # Find all links on homepage
+                all_links = homepage_soup.find_all('a', href=True)
+                contact_keywords = ['contact', 'about', 'team', 'support', 'help', 'reach', 'location', 'office']
+                
+                for link in all_links:
+                    href = link.get('href', '')
+                    if href:
+                        # Convert relative URLs to absolute
+                        absolute_url = urljoin(base_url, href)
+                        parsed_link = urlparse(absolute_url)
+                        
+                        # Only include if it's from the same domain
+                        if parsed_link.netloc == urlparse(base_url).netloc:
+                            href_lower = href.lower()
+                            # Check if link text or href contains contact-related keywords
+                            link_text = link.get_text().lower() if link.get_text() else ''
+                            
+                            if any(keyword in href_lower or keyword in link_text for keyword in contact_keywords):
+                                if absolute_url not in urls_to_crawl:
+                                    urls_to_crawl.append(absolute_url)
+                                    logger.info(f"Discovered contact page from homepage: {absolute_url}")
+        except Exception as e:
+            logger.debug(f"Could not discover links from homepage: {e}")
+        
+        if not sitemap_urls:
             # Fallback to manual page construction
             parsed_url = urlparse(base_url)
             base_domain = f"{parsed_url.scheme}://{parsed_url.netloc}"
             
-            # Add common contact page variations
+            # Add common contact page variations (expanded list)
             contact_pages = [
-                'contact', 'contact-us', 'contactus', 'contact_us',
-                'about', 'about-us', 'aboutus', 'about_us',
-                'team', 'staff', 'people', 'leadership',
-                'support', 'help', 'info', 'information',
-                'reach-us', 'get-in-touch', 'connect', 'services'
+                'contact', 'contact-us', 'contactus', 'contact_us', 'contactus.html', 'contact.html',
+                'about', 'about-us', 'aboutus', 'about_us', 'about.html', 'aboutus.html',
+                'team', 'staff', 'people', 'leadership', 'team.html', 'our-team',
+                'support', 'help', 'info', 'information', 'support.html',
+                'reach-us', 'get-in-touch', 'connect', 'services', 'service',
+                'location', 'locations', 'office', 'offices', 'address',
+                'phone', 'tel', 'call', 'reach', 'find-us'
             ]
             
             for page in contact_pages:
@@ -569,6 +663,7 @@ class EmailExtractor:
     def is_valid_contact_page(self, url):
         """
         Check if a URL is a valid contact/about page (not a long blog post or article)
+        Made less restrictive to catch more pages with contact information
         
         Args:
             url (str): URL to check
@@ -579,20 +674,30 @@ class EmailExtractor:
         parsed = urlparse(url.lower())
         path = parsed.path.strip('/')
         
-        # If path is too long or has too many segments, it's probably not a contact page
-        if len(path) > 50 or path.count('/') > 3:
+        # Homepage is always valid
+        if path == '' or path == 'index.html' or path == 'index.php':
+            return True
+        
+        # If path is extremely long or has too many segments, it's probably not a contact page
+        if len(path) > 100 or path.count('/') > 5:
             return False
             
-        # Check for obvious blog post patterns
-        blog_patterns = ['/content/', '/posts/', '/blog/', '/articles/', '/news/', '/stories/', '/archive/']
+        # Check for obvious blog post patterns (but allow contact-related blog posts)
+        blog_patterns = ['/posts/', '/articles/', '/news/', '/stories/', '/archive/']
         if any(pattern in path for pattern in blog_patterns):
-            return False
+            # But allow if it contains contact-related keywords
+            contact_keywords = ['contact', 'about', 'team', 'support']
+            if not any(keyword in path for keyword in contact_keywords):
+                return False
             
-        # Check for date patterns that indicate blog posts
+        # Check for date patterns that indicate blog posts (but be less strict)
         import re
         date_pattern = r'/\d{4}/\d{1,2}/\d{1,2}'
         if re.search(date_pattern, path):
-            return False
+            # Allow if it's a contact or about page with date
+            contact_keywords = ['contact', 'about', 'team']
+            if not any(keyword in path for keyword in contact_keywords):
+                return False
             
         return True
     
@@ -614,8 +719,10 @@ class EmailExtractor:
             'has_contact_form': False
         }
         
-        # Skip URLs that don't look like proper contact pages
-        if not self.is_valid_contact_page(url):
+        # Skip URLs that don't look like proper contact pages (but be less restrictive for homepage)
+        parsed_url = urlparse(url)
+        is_homepage = parsed_url.path in ['', '/'] or parsed_url.path == '/index.html'
+        if not is_homepage and not self.is_valid_contact_page(url):
             result['status'] = 'Skipped - Not a proper contact/about page'
             return result
         
@@ -632,21 +739,102 @@ class EmailExtractor:
                 result['error'] = f'HTTP {response.status_code}'
                 return result
             
+            # First, extract emails from raw HTML (before parsing) to catch emails in comments, etc.
+            # This is the most important step - check the raw page source thoroughly
+            raw_html = response.text
+            
+            # Extract emails from raw HTML multiple times with different approaches
+            raw_emails = self.extract_emails_from_text(raw_html)
+            result['emails'].update(raw_emails)
+            
+            # Also check HTML comments specifically
+            comment_pattern = re.compile(r'<!--.*?-->', re.DOTALL)
+            comments = comment_pattern.findall(raw_html)
+            for comment in comments:
+                comment_emails = self.extract_emails_from_text(comment)
+                result['emails'].update(comment_emails)
+            
+            # Check for emails in JavaScript strings and variables
+            js_string_pattern = re.compile(r'["\']([^"\']*@[^"\']*\.[^"\']*)["\']', re.IGNORECASE)
+            js_matches = js_string_pattern.findall(raw_html)
+            for match in js_matches:
+                js_emails = self.extract_emails_from_text(match)
+                result['emails'].update(js_emails)
+            
+            # Check for emails in data attributes and JSON-like structures
+            json_like_pattern = re.compile(r'["\']email["\']\s*:\s*["\']([^"\']*@[^"\']*\.[^"\']*)["\']', re.IGNORECASE)
+            json_matches = json_like_pattern.findall(raw_html)
+            for match in json_matches:
+                json_emails = self.extract_emails_from_text(match)
+                result['emails'].update(json_emails)
+            
             # Parse the HTML content
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Check for contact form before removing scripts
             result['has_contact_form'] = self.detect_contact_form(soup)
             
-            # Remove script and style elements
-            for script in soup(["script", "style"]):
+            # Extract emails from script tags BEFORE removing them (some sites obfuscate emails in JS)
+            script_tags = soup.find_all('script')
+            for script in script_tags:
+                if script.string:
+                    script_emails = self.extract_emails_from_text(script.string)
+                    result['emails'].update(script_emails)
+            
+            # Extract emails from data attributes (some sites store emails in data-* attributes)
+            for element in soup.find_all(attrs={'data-email': True}):
+                data_email = element.get('data-email', '')
+                if data_email:
+                    email_set = self.extract_emails_from_text(data_email)
+                    result['emails'].update(email_set)
+            
+            # Extract emails from meta tags
+            meta_tags = soup.find_all('meta')
+            for meta in meta_tags:
+                content = meta.get('content', '')
+                if content:
+                    meta_emails = self.extract_emails_from_text(content)
+                    result['emails'].update(meta_emails)
+            
+            # Extract emails from all link tags (not just mailto)
+            all_links = soup.find_all('a')
+            for link in all_links:
+                href = link.get('href', '')
+                if href:
+                    # Check href for emails
+                    href_emails = self.extract_emails_from_text(href)
+                    result['emails'].update(href_emails)
+                
+                # Check link text
+                if link.string:
+                    link_text_emails = self.extract_emails_from_text(link.string)
+                    result['emails'].update(link_text_emails)
+            
+            # Extract emails from all input fields (type="email" or with email in name/placeholder)
+            input_fields = soup.find_all(['input', 'textarea'])
+            for field in input_fields:
+                # Check value attribute
+                value = field.get('value', '')
+                if value:
+                    value_emails = self.extract_emails_from_text(value)
+                    result['emails'].update(value_emails)
+                
+                # Check placeholder attribute
+                placeholder = field.get('placeholder', '')
+                if placeholder:
+                    placeholder_emails = self.extract_emails_from_text(placeholder)
+                    result['emails'].update(placeholder_emails)
+            
+            # Now remove script and style elements for text extraction
+            soup_copy = BeautifulSoup(response.content, 'html.parser')
+            for script in soup_copy(["script", "style"]):
                 script.decompose()
             
             # Get text content
-            text_content = soup.get_text()
+            text_content = soup_copy.get_text()
             
             # Also get HTML content for mailto links and other patterns
-            html_content = str(soup)
+            html_content = str(soup_copy)
             
             # Extract emails from both text and HTML content
             emails_from_text = self.extract_emails_from_text(text_content)
@@ -657,11 +845,12 @@ class EmailExtractor:
             result['emails'].update(emails_from_html)
             
             # Additional mailto link extraction for extra safety
-            mailto_links = soup.find_all('a', href=re.compile(r'^mailto:'))
+            mailto_links = soup.find_all('a', href=re.compile(r'^mailto:', re.I))
             for link in mailto_links:
                 href = link.get('href', '') if hasattr(link, 'get') else ''
-                if href and isinstance(href, str) and href.startswith('mailto:'):
-                    email = href.replace('mailto:', '').split('?')[0]
+                if href and isinstance(href, str):
+                    # Handle mailto: links (case insensitive)
+                    email = href.replace('mailto:', '').replace('MAILTO:', '').split('?')[0].split('&')[0].strip()
                     # Apply same TLD validation as in extract_emails_from_text
                     email_set = self.extract_emails_from_text(email)
                     result['emails'].update(email_set)
@@ -752,16 +941,25 @@ class EmailExtractor:
                     logger.debug(f"Failed to crawl {page_url}: {e}")
                     continue
             
+            # Limit to maximum 5 emails per website
+            all_emails_list = list(all_emails)
+            limited_emails = all_emails_list[:5]
+            
             # Only update status if we haven't already set a timeout status
             if 'Skipped' not in result['status']:
-                result['emails'] = all_emails
+                result['emails'] = limited_emails
                 result['pages_crawled'] = pages_crawled
                 result['successful_pages'] = successful_pages
                 processing_time = time.time() - site_start_time
-                result['status'] = f'Success - Found {len(all_emails)} emails from {len(result.get("email_sources", []))} pages ({processing_time:.1f}s)'
+                total_found = len(all_emails_list)
+                displayed = len(limited_emails)
+                if total_found > displayed:
+                    result['status'] = f'Success - Found {total_found} emails (showing {displayed}) from {len(result.get("email_sources", []))} pages ({processing_time:.1f}s)'
+                else:
+                    result['status'] = f'Success - Found {displayed} emails from {len(result.get("email_sources", []))} pages ({processing_time:.1f}s)'
             else:
                 # For timeout cases, still return what we found
-                result['emails'] = all_emails
+                result['emails'] = limited_emails
                 result['pages_crawled'] = pages_crawled
                 result['successful_pages'] = successful_pages
             
@@ -775,8 +973,11 @@ class EmailExtractor:
                 result['error'] = str(e)
             logger.warning(f"Error crawling {url}: {e}")
         
-        # Convert set to list for JSON serialization
-        result['emails'] = list(result['emails'])
+        # Ensure emails are a list (already limited to 5)
+        if isinstance(result['emails'], set):
+            result['emails'] = list(result['emails'])[:5]
+        elif isinstance(result['emails'], list):
+            result['emails'] = result['emails'][:5]
         
         return result
     

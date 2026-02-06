@@ -1,0 +1,3876 @@
+[
+  {
+    "id": "extraction_1770364704712",
+    "timestamp": "2026-02-06T13:28:24.712655",
+    "input_method": "text",
+    "name": "Extraction 9",
+    "urls_processed": [
+      "abc.com"
+    ],
+    "total_urls": 1,
+    "processing_time": 31.89,
+    "results": [
+      {
+        "url": "https://abc.com",
+        "emails": [],
+        "status": "Skipped - Taking longer than usual (31.9s timeout)",
+        "error": "Site processing timeout after 31.9 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://abc.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://abc.com/watch-live/885c669e-fa9a-4039-b42e-6c85c90cc86d?modal=mvpd",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 0,
+    "successful_extractions": 0,
+    "failed_extractions": 1
+  },
+  {
+    "id": "extraction_1770364335005",
+    "timestamp": "2026-02-06T13:22:15.005497",
+    "input_method": "csv",
+    "name": "Manish Test",
+    "urls_processed": [
+      "https://techpluto.com",
+      "https://landauditors.com",
+      "https://prchitects.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 23.86,
+    "results": [
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (6.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com#contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html",
+          "https://landauditors.com#contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 9 pages (6.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html",
+          "https://prchitects.com/about.html",
+          "https://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (23.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770364278635",
+    "timestamp": "2026-02-06T13:21:18.635265",
+    "input_method": "text",
+    "name": "Extraction 7",
+    "urls_processed": [
+      "https://techpluto.com",
+      "https://landauditors.com",
+      "https://prchitects.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 16.66,
+    "results": [
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (9.4s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com#contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html",
+          "https://landauditors.com#contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 9 pages (9.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html",
+          "https://prchitects.com/about.html",
+          "https://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (16.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770363753301",
+    "timestamp": "2026-02-06T13:12:33.301057",
+    "input_method": "csv",
+    "urls_processed": [
+      "womenstorie.co.uk",
+      "techbonna.com",
+      "thegarage2global.com",
+      "wooninfluencers.nl",
+      "geld101.nl",
+      "watbetekent.nl",
+      "reislegende.nl",
+      "storiestoday.co.uk",
+      "voetbaltrucjesleren.nl",
+      "techdesired.com",
+      "zijtikt.nl",
+      "hetamsterdamschevoetbal.nl",
+      "digitailing.nl",
+      "alexmiedema.nl",
+      "productadviseurs.nl",
+      "vrouwenpower.nl",
+      "voormijnkleintje.nl",
+      "aavot.co.uk",
+      "arcyart.blog",
+      "charlesandhudson.com",
+      "stunningtravel.nl",
+      "khatrinews.co.uk",
+      "theblognews.co.uk",
+      "rosaschrijft.nl",
+      "blowmagazine.co.uk",
+      "thedailydutchy.com",
+      "wordlehinttoday.uk",
+      "washingtondcview.com",
+      "walastech.com",
+      "xptmagazine.co.uk",
+      "writemagazine.co.uk",
+      "vidmattapp.com",
+      "wheoncricket07.in",
+      "lorabusiness.com",
+      "educationbeing.com",
+      "jernsenger.co.uk",
+      "dailybizz.co.uk",
+      "jumpstory.com",
+      "katieboer.com",
+      "labscorpbilling.com",
+      "labarty.com",
+      "aisaaswriter.com",
+      "claudelog.com",
+      "itwordsearch.net",
+      "anokyais.blog",
+      "lasfutbolistas.com",
+      "unexpectedlydomestic.com",
+      "ventzmagazines.com",
+      "whatutalkingboutwillistyle.com",
+      "traveler.gg",
+      "thelitechauffeurs.co.uk",
+      "alldayblessings.com",
+      "badmashshayari.com",
+      "glendalestar.com",
+      "globeinsightblogcom.com",
+      "globalbmicalculator.com",
+      "artaverse.in",
+      "hdhubforyou.co.uk",
+      "hypesbusiness.com",
+      "greencelab.com",
+      "geekmill.uk",
+      "globomint.com",
+      "254suretip.com",
+      "animesuperhero.com",
+      "happyhoursspot.com",
+      "bay-bee.co.uk"
+    ],
+    "total_urls": 66,
+    "processing_time": 320.06,
+    "results": [
+      {
+        "url": "https://techbonna.com",
+        "emails": [
+          "info@techbonna.com"
+        ],
+        "status": "Success - Found 1 emails from 4 pages (17.0s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techbonna.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techbonna.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techbonna.com/services/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techbonna.com/about/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://techbonna.com",
+          "https://techbonna.com/contact-us/",
+          "https://techbonna.com/services/",
+          "https://techbonna.com/about/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://thegarage2global.com",
+        "emails": [
+          "sophiarivera2308@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (22.3s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://thegarage2global.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thegarage2global.com/mobile-app-development-company-garage2global-your-go-to-partner-for-digital-success/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thegarage2global.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://thegarage2global.com/about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thegarage2global.com/services/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://thegarage2global.com",
+          "https://thegarage2global.com/contact/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://wooninfluencers.nl",
+        "emails": [
+          "%20info@wooninfluencers.nl",
+          "info@wooninfluencers.nl",
+          "20info@wooninfluencers.nl"
+        ],
+        "status": "Success - Found 3 emails from 2 pages (31.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://wooninfluencers.nl",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://www.wooninfluencers.nl/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://wooninfluencers.nl",
+          "https://www.wooninfluencers.nl/contact"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://storiestoday.co.uk",
+        "emails": [
+          "nothing@all.as",
+          "contact@storiestoday.co.uk"
+        ],
+        "status": "Success - Found 2 emails from 2 pages (31.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://storiestoday.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://storiestoday.co.uk/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/latest-on-waspi-compensation/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/life-behind-wheel-british-taxi-drivers/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/hr-support-during-staff-divorce/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/phishing-simulation-turns-staff-security-assets/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/b2b-lead-generation-mistakes-uk/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://storiestoday.co.uk/steven-bartlett-net-worth/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://storiestoday.co.uk/contact-us/",
+          "https://storiestoday.co.uk/latest-on-waspi-compensation/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://womenstorie.co.uk",
+        "emails": [
+          "collabwomenstorie@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (32.0s timeout)",
+        "error": "Site processing timeout after 32.0 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://womenstorie.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://womenstorie.co.uk/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://womenstorie.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://womenstorie.co.uk/affordable-yet-effective-keloid-treatments-you-should-know-about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://womenstorie.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://voetbaltrucjesleren.nl",
+        "emails": [
+          "entertainment@voetbaltrucjesleren.nl",
+          "info@voetbaltrucjesleren.nl",
+          "adverteren@voetbaltrucjesleren.nl",
+          "mijnvideo@voetbaltrucjesleren.nl",
+          "shop@voetbaltrucjesleren.nl"
+        ],
+        "status": "Success - Found 6 emails (showing 5) from 2 pages (16.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://voetbaltrucjesleren.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.voetbaltrucjesleren.nl/contact/",
+            "emails_found": 6,
+            "status": "Success - Found 6 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://voetbaltrucjesleren.nl",
+          "https://www.voetbaltrucjesleren.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://geld101.nl",
+        "emails": [
+          "marianne@geld101.nl",
+          "info@geld101.nl"
+        ],
+        "status": "Success - Found 2 emails from 3 pages (33.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://geld101.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.geld101.nl/contact",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://geld101.nl/contact",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://geld101.nl",
+          "https://www.geld101.nl/contact",
+          "https://geld101.nl/contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://reislegende.nl",
+        "emails": [
+          "info@reislegende.nl"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (34.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://reislegende.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.reislegende.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://reislegende.nl",
+          "https://www.reislegende.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://watbetekent.nl",
+        "emails": [
+          "info@watbetekent.nl"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (34.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://watbetekent.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.watbetekent.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://watbetekent.nl",
+          "https://www.watbetekent.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techdesired.com",
+        "emails": [],
+        "status": "Success - Found 0 emails from 0 pages (24.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techdesired.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techdesired.com/contact-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techdesired.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://techdesired.com/contact-emails-jackman-masterrealtysolutions-guide/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://techdesired.com/contact-emails-jackman-masterrealtysolutions-guide/#respond",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://techdesired.com/how-youtube-video-makers-help-marketers-create-engaging-call-to-actions/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://techdesired.com/how-youtube-video-makers-help-marketers-create-engaging-call-to-actions/#respond",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": true
+          }
+        ],
+        "successful_pages": 7,
+        "email_sources": [],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://digitailing.nl",
+        "emails": [
+          "luuk@studiokaboem.nl",
+          "robert@digitailing.nl",
+          "wout@digitailing.nl"
+        ],
+        "status": "Success - Found 3 emails from 2 pages (15.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://digitailing.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://digitailing.nl/digitailing-contact/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": true
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://digitailing.nl",
+          "https://digitailing.nl/digitailing-contact/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://voormijnkleintje.nl",
+        "emails": [
+          "pauline@voormijnkleintje.nl",
+          "persberichten@voormijnkleintje.nl",
+          "adverteren@voormijnkleintje.nl"
+        ],
+        "status": "Success - Found 3 emails from 1 pages (17.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://voormijnkleintje.nl",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.voormijnkleintje.nl/contact/disclaimer/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.voormijnkleintje.nl/contact/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://www.voormijnkleintje.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://hetamsterdamschevoetbal.nl",
+        "emails": [
+          "info@hetamsterdamschevoetbal.nl"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (21.3s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://hetamsterdamschevoetbal.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.hetamsterdamschevoetbal.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://hetamsterdamschevoetbal.nl",
+          "https://www.hetamsterdamschevoetbal.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://zijtikt.nl",
+        "emails": [
+          "info@zijtikt.nl"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (22.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://zijtikt.nl",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.zijtikt.nl/about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.zijtikt.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://www.zijtikt.nl/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://alexmiedema.nl",
+        "emails": [
+          "aamiedema@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.4s timeout)",
+        "error": "Site processing timeout after 30.4 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://alexmiedema.nl",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://alexmiedema.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://alexmiedema.nl/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://alexmiedema.nl/contact.html",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://alexmiedema.nl/contact/",
+          "https://alexmiedema.nl/contact"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://vrouwenpower.nl",
+        "emails": [
+          "info@mindbogglingmedia.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (35.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://vrouwenpower.nl",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.vrouwenpower.nl/neem-contact-met-ons-op/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://vrouwenpower.nl",
+          "https://www.vrouwenpower.nl/neem-contact-met-ons-op/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://productadviseurs.nl",
+        "emails": [
+          "info@productadviseurs.nl",
+          "purmerendinfo@productadviseurs.nl"
+        ],
+        "status": "Skipped - Taking longer than usual (38.2s timeout)",
+        "error": "Site processing timeout after 38.2 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://productadviseurs.nl",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://productadviseurs.nl/contact/",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://productadviseurs.nl/contact",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://productadviseurs.nl/contact.html",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 1,
+        "email_sources": [
+          "https://productadviseurs.nl"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://charlesandhudson.com",
+        "emails": [
+          "editor@charlesandhudson.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (21.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://charlesandhudson.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://charlesandhudson.com/about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://charlesandhudson.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://charlesandhudson.com/budget-smart-upgrades-for-home-offices/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://charlesandhudson.com/practical-home-choices-stress-free-living/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://charlesandhudson.com/how-to-create-a-home-office-that-boosts-productivity/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://charlesandhudson.com/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://arcyart.blog",
+        "emails": [
+          "tech-review@email.com",
+          "info@virtivox.com",
+          "ustech-review@email.com"
+        ],
+        "status": "Success - Found 3 emails from 2 pages (29.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://arcyart.blog",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://arcyart.blog/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://arcyart.blog/contacts/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://arcyart.blog/services/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://arcyart.blog/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://arcyart.blog/simple-parenting-habits-that-support-long-term-child-well-being/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://arcyart.blog/contacts/",
+          "https://arcyart.blog/contact-us/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://theblognews.co.uk",
+        "emails": [
+          "contact.theblognews@gmail.com",
+          "theblognews@gmail.com"
+        ],
+        "status": "Success - Found 2 emails from 1 pages (16.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://theblognews.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.theblognews.co.uk/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.theblognews.co.uk/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://www.theblognews.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://aavot.co.uk",
+        "emails": [
+          "info@virtivox.com"
+        ],
+        "status": "Skipped - Taking longer than usual (34.4s timeout)",
+        "error": "Site processing timeout after 34.4 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://aavot.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aavot.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aavot.co.uk/what-should-you-know-about-building-approvals-and-regulations-in-australia/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aavot.co.uk/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aavot.co.uk/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aavot.co.uk/contact.html",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://aavot.co.uk/contact-us/",
+          "https://aavot.co.uk/contact/",
+          "https://aavot.co.uk/contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://rosaschrijft.nl",
+        "emails": [
+          "contact@rosaschrijft.nl"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (12.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://rosaschrijft.nl",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://rosaschrijft.nl/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://rosaschrijft.nl/hoe-kan-het-consultatiebureau-van-de-ggd-jou-helpen/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://rosaschrijft.nl/contact/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://thedailydutchy.com",
+        "emails": [
+          "vivian@thedailydutchy.com",
+          "11885199info@thedailydutchy.com",
+          "info@thedailydutchy.com"
+        ],
+        "status": "Success - Found 3 emails from 2 pages (9.3s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://thedailydutchy.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thedailydutchy.com/contact/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thedailydutchy.com/team/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://thedailydutchy.com",
+          "https://thedailydutchy.com/team/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://blowmagazine.co.uk",
+        "emails": [
+          "contact@blowmagazine.co.uk"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (12.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://blowmagazine.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://blowmagazine.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://blowmagazine.co.uk/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://blowmagazine.co.uk/atila-altaunbay/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://blowmagazine.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://wordlehinttoday.uk",
+        "emails": [
+          "wordlehinttoday002@gmail.com",
+          "002@gmail.com"
+        ],
+        "status": "Success - Found 2 emails from 1 pages (7.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://wordlehinttoday.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://wordlehinttoday.uk/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://wordlehinttoday.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://khatrinews.co.uk",
+        "emails": [
+          "contact.khatrinews@gmail.com",
+          "khatrinews@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.5s timeout)",
+        "error": "Site processing timeout after 30.5 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://khatrinews.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://khatrinews.co.uk/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://khatrinews.co.uk/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://khatrinews.co.uk/what-wearing-all-the-colors-says-about-this-moment-in-history/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://khatrinews.co.uk/underdogs-in-the-2026-nfl-playoffs-teams-likely-to-cause-upsets/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://khatrinews.co.uk/cholerhiasis-everything-you-need-to-know-about-symptoms-causes-and-treatment/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://khatrinews.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://xptmagazine.co.uk",
+        "emails": [
+          "xptmagazine@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (8.0s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://xptmagazine.co.uk",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://xptmagazine.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://xptmagazine.co.uk",
+          "https://xptmagazine.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://lorabusiness.com",
+        "emails": [
+          "userlozitorex@gmail.com",
+          "joylozitorex@gmail.com",
+          "toolslozitorex@gmail.com",
+          "impactlozitorex@gmail.com",
+          "lozitorex@gmail.com"
+        ],
+        "status": "Success - Found 5 emails from 3 pages (8.0s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://lorabusiness.com",
+            "emails_found": 5,
+            "status": "Success - Found 5 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://lorabusiness.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://lorabusiness.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://lorabusiness.com",
+          "https://lorabusiness.com/contact-us/",
+          "https://lorabusiness.com/about-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://wheoncricket07.in",
+        "emails": [],
+        "status": "Success - Found 0 emails from 0 pages (9.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://wheoncricket07.in",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://wheoncricket07.in/contact-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://wheoncricket07.in/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://walastech.com",
+        "emails": [
+          "carl@walastech.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (18.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://walastech.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://walastech.com/about-us-team-walastech/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://walastech.com/news/power-bank-explodes-inside-ph-senate-office/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://walastech.com",
+          "https://walastech.com/about-us-team-walastech/",
+          "https://walastech.com/news/power-bank-explodes-inside-ph-senate-office/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://jernsenger.co.uk",
+        "emails": [
+          "here@jernsenger.co.uk",
+          "jernsenger@gmail.com"
+        ],
+        "status": "Success - Found 2 emails from 3 pages (13.4s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://jernsenger.co.uk",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://jernsenger.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://jernsenger.co.uk/about-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://jernsenger.co.uk",
+          "https://jernsenger.co.uk/contact-us/",
+          "https://jernsenger.co.uk/about-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://dailybizz.co.uk",
+        "emails": [
+          "info.dailybizz@gmail.com",
+          "place@dailybizz.co.uk",
+          "atinfo.dailybizz@gmail.com"
+        ],
+        "status": "Success - Found 3 emails from 5 pages (15.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://dailybizz.co.uk",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://dailybizz.co.uk/about-us/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://dailybizz.co.uk/contact-us/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://dailybizz.co.uk/services/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://dailybizz.co.uk/top-7-waste-removal-solutions/",
+            "emails_found": 3,
+            "status": "Success - Found 3 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://dailybizz.co.uk",
+          "https://dailybizz.co.uk/about-us/",
+          "https://dailybizz.co.uk/contact-us/",
+          "https://dailybizz.co.uk/services/",
+          "https://dailybizz.co.uk/top-7-waste-removal-solutions/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://vidmattapp.com",
+        "emails": [
+          "vidmattap@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (26.0s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://vidmattapp.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/?page_id=199",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/929-663-5073/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/vidmate-download/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/whotfissachi-scat/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/matka-india/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/ratugacor11-com-link/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/barbara-boothe/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://vidmattapp.com/erectn/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://vidmattapp.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://washingtondcview.com",
+        "emails": [],
+        "status": "Success - Found 0 emails from 0 pages (31.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://washingtondcview.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://washingtondcview.com/trip-planning-washington-dc/taxi-cab-services-dc/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://washingtondcview.com/contact/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://writemagazine.co.uk",
+        "emails": [
+          "officialwritemagazine@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.5s timeout)",
+        "error": "Site processing timeout after 30.5 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://writemagazine.co.uk",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://writemagazine.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://writemagazine.co.uk/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://writemagazine.co.uk",
+          "https://writemagazine.co.uk/contact-us/",
+          "https://writemagazine.co.uk/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://jumpstory.com",
+        "emails": [
+          "office@jumpstory.com"
+        ],
+        "status": "Success - Found 1 emails from 4 pages (17.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://jumpstory.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://jumpstory.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://jumpstory.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://jumpstory.com/marketing-strategies-that-help-solo-founders/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://jumpstory.com",
+          "https://jumpstory.com/about-us/",
+          "https://jumpstory.com/contact-us/",
+          "https://jumpstory.com/marketing-strategies-that-help-solo-founders/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://katieboer.com",
+        "emails": [
+          "secure.accesshub@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (12.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://katieboer.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://katieboer.com/about/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://katieboer.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://katieboer.com",
+          "https://katieboer.com/about/",
+          "https://katieboer.com/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://labarty.com",
+        "emails": [
+          "wibetechnical@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (12.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://labarty.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://labarty.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://labarty.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://labarty.com",
+          "https://labarty.com/contact-us/",
+          "https://labarty.com/about-us/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://educationbeing.com",
+        "emails": [],
+        "status": "Skipped - Taking longer than usual (39.1s timeout)",
+        "error": "Site processing timeout after 39.1 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://educationbeing.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://educationbeing.com/talking-about-the-hard-things-faith-love-and-identity-in-adulthood-honest-review/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://educationbeing.com/how-nda-coaching-in-chandigarh-helps-you-crack-the-exam-in-first-attempt/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://educationbeing.com/thealite-guest-post-expand-your-reach-and-authority-online/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://educationbeing.com/linkedin-learning-vs-coursera-what-they-teach-us-about-live-streaming-websites/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://aisaaswriter.com",
+        "emails": [
+          "talhasaeedblogging@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (25.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://aisaaswriter.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://aisaaswriter.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://aisaaswriter.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://itwordsearch.net",
+        "emails": [
+          "nplay@itwordsearch.net",
+          "media.finixiodigital@gmail.com",
+          "emailmedia.finixiodigital@gmail.com"
+        ],
+        "status": "Success - Found 3 emails from 2 pages (21.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://itwordsearch.net",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://itwordsearch.net/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://itwordsearch.net",
+          "https://itwordsearch.net/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://anokyais.blog",
+        "emails": [
+          "techpixel977@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (24.4s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://anokyais.blog",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://anokyais.blog/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://anokyais.blog/about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://anokyais.blog/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://labscorpbilling.com",
+        "emails": [
+          "lesianamegy0@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (34.6s timeout)",
+        "error": "Site processing timeout after 34.6 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://labscorpbilling.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://labscorpbilling.com/about-labscorpbilling-com/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://labscorpbilling.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://labscorpbilling.com/labcorp-bill-payment/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://labscorpbilling.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://claudelog.com",
+        "emails": [
+          "hello@claudelog.com"
+        ],
+        "status": "Skipped - Taking longer than usual (32.2s timeout)",
+        "error": "Site processing timeout after 32.2 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://claudelog.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.claudelog.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://claudelog.com",
+          "https://www.claudelog.com/contact/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://ventzmagazines.com",
+        "emails": [
+          "bsri4263@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (12.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://ventzmagazines.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://ventzmagazines.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://ventzmagazines.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://ventzmagazines.com",
+          "https://ventzmagazines.com/contact-us/",
+          "https://ventzmagazines.com/about-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://whatutalkingboutwillistyle.com",
+        "emails": [
+          "liajackson343@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (13.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://whatutalkingboutwillistyle.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://whatutalkingboutwillistyle.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://whatutalkingboutwillistyle.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://whatutalkingboutwillistyle.com/contact-us/",
+          "https://whatutalkingboutwillistyle.com/about-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://thelitechauffeurs.co.uk",
+        "emails": [
+          "admin@masteritfirm.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (7.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://thelitechauffeurs.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://thelitechauffeurs.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://thelitechauffeurs.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://alldayblessings.com",
+        "emails": [
+          "theuntoldlibrary1@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (9.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://alldayblessings.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://alldayblessings.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://alldayblessings.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://alldayblessings.com/contact-us/"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://unexpectedlydomestic.com",
+        "emails": [
+          "rebecca@unexpectedlydomestic.com.my"
+        ],
+        "status": "Skipped - Taking longer than usual (30.8s timeout)",
+        "error": "Site processing timeout after 30.8 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://unexpectedlydomestic.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.unexpectedlydomestic.com/contact-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.unexpectedlydomestic.com/contact/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.unexpectedlydomestic.com/about/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.unexpectedlydomestic.com/farmhouse-about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.unexpectedlydomestic.com/about/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://lasfutbolistas.com",
+        "emails": [
+          "info@lasfutbolistas.com"
+        ],
+        "status": "Skipped - Taking longer than usual (36.2s timeout)",
+        "error": "Site processing timeout after 36.2 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://lasfutbolistas.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://lasfutbolistas.com/contact/",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://lasfutbolistas.com/contact",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 1,
+        "email_sources": [
+          "https://lasfutbolistas.com"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://badmashshayari.com",
+        "emails": [
+          "u00a0contact@urdufeed.org"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (11.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://badmashshayari.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://badmashshayari.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://badmashshayari.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://badmashshayari.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://artaverse.in",
+        "emails": [
+          "jewelrhosting@gmail.com",
+          "rankbudz@gmail.com"
+        ],
+        "status": "Success - Found 2 emails from 5 pages (20.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://artaverse.in",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://artaverse.in/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://artaverse.in/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://artaverse.in/contact-us",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://artaverse.in/steam-iron-for-clothes/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": true
+          },
+          {
+            "url": "https://artaverse.in/about-us",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://artaverse.in",
+          "https://artaverse.in/contact-us/",
+          "https://artaverse.in/about-us/",
+          "https://artaverse.in/contact-us",
+          "https://artaverse.in/about-us"
+        ],
+        "has_contact_form": true
+      },
+      {
+        "url": "https://glendalestar.com",
+        "emails": [
+          "info@theglendalestar.com",
+          "zac@timeslocalmedia.com",
+          "production@timeslocalmedia.com",
+          "jmchugh@timeslocalmedia.com",
+          "nick@timeslocalmedia.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.9s timeout)",
+        "error": "Site processing timeout after 30.9 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://glendalestar.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/business/babbo-arrowhead-expands-original-location/article_a0a37aab-519d-4e25-b906-4007383e557a.html",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/site/about.html",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/site/contact.html",
+            "emails_found": 10,
+            "status": "Success - Found 10 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/contact/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/contact",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://glendalestar.com/contact.html",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 7,
+        "email_sources": [
+          "https://glendalestar.com",
+          "https://glendalestar.com/site/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://globeinsightblogcom.com",
+        "emails": [
+          "info@virtivox.com"
+        ],
+        "status": "Skipped - Taking longer than usual (31.4s timeout)",
+        "error": "Site processing timeout after 31.4 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://globeinsightblogcom.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globeinsightblogcom.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globeinsightblogcom.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globeinsightblogcom.com/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://globeinsightblogcom.com/contact-us/",
+          "https://globeinsightblogcom.com/contact/",
+          "https://globeinsightblogcom.com/contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://globalbmicalculator.com",
+        "emails": [
+          "houseguestpost@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (31.5s timeout)",
+        "error": "Site processing timeout after 31.5 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://globalbmicalculator.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globalbmicalculator.com/faqs-about-bmi-calculator/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globalbmicalculator.com/about-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globalbmicalculator.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globalbmicalculator.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globalbmicalculator.com/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://globalbmicalculator.com",
+          "https://globalbmicalculator.com/faqs-about-bmi-calculator/",
+          "https://globalbmicalculator.com/about-us/",
+          "https://globalbmicalculator.com/contact-us/",
+          "https://globalbmicalculator.com/contact/",
+          "https://globalbmicalculator.com/contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://traveler.gg",
+        "emails": [],
+        "status": "Skipped - Taking longer than usual (45.3s timeout)",
+        "error": "Site processing timeout after 45.3 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://traveler.gg",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 0,
+        "email_sources": [],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://hdhubforyou.co.uk",
+        "emails": [
+          "editorbrodymedia@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (33.0s timeout)",
+        "error": "Site processing timeout after 33.0 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://hdhubforyou.co.uk",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/business-phone-888-584-7498-customer-help-desk/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/support-line-7313120011-business-assistance/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/customer-care-phone-9187073034-support-hotline/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/business-phone-9842631014-customer-support/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hdhubforyou.co.uk/support-line-8889048461-business-help-desk/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 7,
+        "email_sources": [
+          "https://hdhubforyou.co.uk/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://hypesbusiness.com",
+        "emails": [
+          "khatridanish9900@gmail.com",
+          "9900@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.9s timeout)",
+        "error": "Site processing timeout after 30.9 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://hypesbusiness.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://hypesbusiness.com/christine-williamson-husband/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://hypesbusiness.com",
+          "https://hypesbusiness.com/christine-williamson-husband/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://geekmill.uk",
+        "emails": [
+          "muhammaddaniyal7801@gmail.com",
+          "bloggerguides01@gmail.com"
+        ],
+        "status": "Success - Found 2 emails from 4 pages (11.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://geekmill.uk",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://geekmill.uk/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://geekmill.uk/babybelletje/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://geekmill.uk/mason-summey33/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://geekmill.uk",
+          "https://geekmill.uk/contact-us/",
+          "https://geekmill.uk/babybelletje/",
+          "https://geekmill.uk/mason-summey33/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://greencelab.com",
+        "emails": [
+          "timecelebrityblog@gmail.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (17.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://greencelab.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://greencelab.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://greencelab.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://greencelab.com/7-key-facts-about-modern-fertility-procedures-in-south-carolina/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://greencelab.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://animesuperhero.com",
+        "emails": [
+          "admin@animesuperhero.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (14.7s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://animesuperhero.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://animesuperhero.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://animesuperhero.com/about-us/authors-and-editors/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://animesuperhero.com/contactus/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://animesuperhero.com/contact-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://animesuperhero.com/the-latest-super-mario-galaxy-movie-trailer-is-all-about-yoshi/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 6,
+        "email_sources": [
+          "https://animesuperhero.com/contactus/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://254suretip.com",
+        "emails": [
+          "254suretip247@gmail.com",
+          "ads@254suretip.com"
+        ],
+        "status": "Success - Found 2 emails from 4 pages (22.3s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://254suretip.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://254suretip.com/contact-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://254suretip.com/about-us/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://254suretip.com/must-win-teams-today/",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 4,
+        "email_sources": [
+          "https://254suretip.com",
+          "https://254suretip.com/contact-us/",
+          "https://254suretip.com/about-us/",
+          "https://254suretip.com/must-win-teams-today/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://globomint.com",
+        "emails": [
+          "hamza.imran@globomint.com",
+          "doing@all.in"
+        ],
+        "status": "Success - Found 2 emails from 2 pages (28.4s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://globomint.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/02/05/is-qoghundos-harmful/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/02/05/fappelo/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/02/04/akrylika/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/02/04/trupeek-com/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/01/31/instablu/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/01/21/kibard/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/01/16/zizole-the-ancient-superfruit-you-need-to-know-about/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://globomint.com/2026/01/14/pantagonar/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 10,
+        "email_sources": [
+          "https://globomint.com/contact-us/",
+          "https://globomint.com/2026/01/21/kibard/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://happyhoursspot.com",
+        "emails": [
+          "addisonwilder41@gmail.com"
+        ],
+        "status": "Skipped - Taking longer than usual (30.8s timeout)",
+        "error": "Site processing timeout after 30.8 seconds",
+        "pages_crawled": [
+          {
+            "url": "https://happyhoursspot.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://happyhoursspot.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://happyhoursspot.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://happyhoursspot.com/contact/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://happyhoursspot.com/contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://happyhoursspot.com/contact.html",
+            "emails_found": 0,
+            "status": "Error - Request failed after retries",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://happyhoursspot.com/contact-us/",
+          "https://happyhoursspot.com/contact/",
+          "https://happyhoursspot.com/contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://stunningtravel.nl",
+        "emails": [],
+        "status": "Skipped - Taking longer than usual (215.6s timeout)",
+        "error": "Site processing timeout after 215.6 seconds",
+        "pages_crawled": [],
+        "successful_pages": 0,
+        "email_sources": [],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://bay-bee.co.uk",
+        "emails": [],
+        "status": "Skipped - Taking longer than usual (126.9s timeout)",
+        "error": "Site processing timeout after 126.9 seconds",
+        "pages_crawled": [],
+        "successful_pages": 0,
+        "email_sources": [],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 97,
+    "successful_extractions": 59,
+    "failed_extractions": 7
+  },
+  {
+    "id": "extraction_1770361996711",
+    "timestamp": "2026-02-06T12:43:16.711587",
+    "input_method": "text",
+    "urls_processed": [
+      "techpluto.com",
+      "prchitects.com",
+      "landauditors.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 11.61,
+    "results": [
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (8.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (9.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com#contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html",
+          "https://landauditors.com#contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 9 pages (11.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html",
+          "https://prchitects.com/about.html",
+          "https://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770361876179",
+    "timestamp": "2026-02-06T12:41:16.179682",
+    "input_method": "text",
+    "urls_processed": [
+      "techpluto.com",
+      "prchitects.com",
+      "landauditors.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 17.07,
+    "results": [
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (9.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com#contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html",
+          "https://landauditors.com#contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (16.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 9 pages (17.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html",
+          "https://prchitects.com/about.html",
+          "https://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770361104670",
+    "timestamp": "2026-02-06T12:28:24.670805",
+    "input_method": "text",
+    "urls_processed": [
+      "techpluto.com",
+      "prchitects.com",
+      "landauditors.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 11.46,
+    "results": [
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 3 pages (6.8s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com#contact",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 3,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html",
+          "https://landauditors.com#contact"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 9 pages (7.6s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 9,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html",
+          "https://prchitects.com/about.html",
+          "https://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (11.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770359855038",
+    "timestamp": "2026-02-06T12:07:35.038460",
+    "input_method": "text",
+    "urls_processed": [
+      "techpluto.com",
+      "prchitects.com",
+      "landauditors.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 5.19,
+    "results": [
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (3.1s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 7 pages (5.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 7,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (5.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  },
+  {
+    "id": "extraction_1770359552873",
+    "timestamp": "2026-02-06T12:02:32.873129",
+    "input_method": "text",
+    "urls_processed": [
+      "techpluto.com",
+      "prchitects.com",
+      "landauditors.com"
+    ],
+    "total_urls": 3,
+    "processing_time": 14.55,
+    "results": [
+      {
+        "url": "https://prchitects.com",
+        "emails": [
+          "contact@accunite.com",
+          "contact@prchitects.com"
+        ],
+        "status": "Success - Found 2 emails from 7 pages (5.9s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://prchitects.com",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/about.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-marketing-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/influencer-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/link-building-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/webmaster-management-services.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "http://prchitects.com/contact.html",
+            "emails_found": 2,
+            "status": "Success - Found 2 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 7,
+        "email_sources": [
+          "https://prchitects.com",
+          "http://prchitects.com/about.html",
+          "http://prchitects.com/influencer-marketing-services.html",
+          "http://prchitects.com/influencer-management-services.html",
+          "http://prchitects.com/link-building-services.html",
+          "http://prchitects.com/webmaster-management-services.html",
+          "http://prchitects.com/contact.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://landauditors.com",
+        "emails": [
+          "contact@landauditors.com"
+        ],
+        "status": "Success - Found 1 emails from 2 pages (6.2s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://landauditors.com",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://landauditors.com/about.html",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 2,
+        "email_sources": [
+          "https://landauditors.com",
+          "https://landauditors.com/about.html"
+        ],
+        "has_contact_form": false
+      },
+      {
+        "url": "https://techpluto.com",
+        "emails": [
+          "contact@techpluto.com"
+        ],
+        "status": "Success - Found 1 emails from 1 pages (14.5s)",
+        "error": null,
+        "pages_crawled": [
+          {
+            "url": "https://techpluto.com",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contacts/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-1/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/about-us/",
+            "emails_found": 0,
+            "status": "Success - Found 0 emails",
+            "has_contact_form": false
+          },
+          {
+            "url": "https://www.techpluto.com/contact-us/",
+            "emails_found": 1,
+            "status": "Success - Found 1 emails",
+            "has_contact_form": false
+          }
+        ],
+        "successful_pages": 5,
+        "email_sources": [
+          "https://www.techpluto.com/contact-us/"
+        ],
+        "has_contact_form": false
+      }
+    ],
+    "total_emails_found": 4,
+    "successful_extractions": 3,
+    "failed_extractions": 0
+  }
+]
